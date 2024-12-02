@@ -430,6 +430,7 @@ public class Home extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jButton3 = new javax.swing.JButton();
         bg = new javax.swing.JPanel();
         sidepane = new javax.swing.JPanel();
         btn_home = new javax.swing.JPanel();
@@ -480,7 +481,6 @@ public class Home extends javax.swing.JFrame {
         jScrollPane3 = new javax.swing.JScrollPane();
         TBLHistory = new javax.swing.JTable();
         jLabel19 = new javax.swing.JLabel();
-        jButton3 = new javax.swing.JButton();
         jScrollPane4 = new javax.swing.JScrollPane();
         jPanelProduct = new javax.swing.JPanel();
         btn_addProduct = new keeptoo.KButton();
@@ -492,6 +492,14 @@ public class Home extends javax.swing.JFrame {
         jTextFieldKey = new javax.swing.JTextField();
         jComboBoxCategoty1 = new javax.swing.JComboBox<>();
         btn_updateUser2 = new keeptoo.KButton();
+
+        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/excel.png"))); // NOI18N
+        jButton3.setText("Print");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setLocationByPlatform(true);
@@ -1078,14 +1086,6 @@ public class Home extends javax.swing.JFrame {
         jLabel19.setFont(new java.awt.Font("Tahoma", 2, 18)); // NOI18N
         jLabel19.setText("History");
 
-        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/excel.png"))); // NOI18N
-        jButton3.setText("Print");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
-            }
-        });
-
         javax.swing.GroupLayout jPanelStatisticalLayout = new javax.swing.GroupLayout(jPanelStatistical);
         jPanelStatistical.setLayout(jPanelStatisticalLayout);
         jPanelStatisticalLayout.setHorizontalGroup(
@@ -1095,13 +1095,13 @@ public class Home extends javax.swing.JFrame {
                     .addGroup(jPanelStatisticalLayout.createSequentialGroup()
                         .addGap(28, 28, 28)
                         .addGroup(jPanelStatisticalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jComboBoxDate, javax.swing.GroupLayout.Alignment.TRAILING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addGroup(jPanelStatisticalLayout.createSequentialGroup()
+                            .addComponent(jComboBoxDate, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelStatisticalLayout.createSequentialGroup()
+                                .addGap(0, 0, Short.MAX_VALUE)
                                 .addComponent(btn_refresh, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                                .addGap(98, 98, 98))))
                     .addGroup(jPanelStatisticalLayout.createSequentialGroup()
-                        .addContainerGap(14, Short.MAX_VALUE)
+                        .addContainerGap(70, Short.MAX_VALUE)
                         .addComponent(jLabel15)
                         .addGap(18, 18, 18)
                         .addComponent(jTextFieldRevenue, javax.swing.GroupLayout.PREFERRED_SIZE, 173, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -1126,15 +1126,10 @@ public class Home extends javax.swing.JFrame {
                         .addGroup(jPanelStatisticalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel15, javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(jTextFieldRevenue, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(jPanelStatisticalLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanelStatisticalLayout.createSequentialGroup()
-                                .addGap(79, 79, 79)
-                                .addComponent(btn_refresh, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanelStatisticalLayout.createSequentialGroup()
-                                .addGap(76, 76, 76)
-                                .addComponent(jButton3)))
-                        .addGap(44, 44, 44))
-                    .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
+                        .addGap(74, 74, 74)
+                        .addComponent(btn_refresh, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(49, 49, 49))
+                    .addComponent(jScrollPane3, javax.swing.GroupLayout.DEFAULT_SIZE, 396, Short.MAX_VALUE))
                 .addContainerGap())
         );
 
